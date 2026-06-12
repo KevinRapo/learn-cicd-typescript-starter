@@ -23,7 +23,7 @@ jobs:
 
       - name: Run coverage test
         run: npm run test -- --coverage
-        
+
   style:
     name: Style
     runs-on: ubuntu-latest
@@ -42,4 +42,7 @@ jobs:
 
       - name: Style
         run: npm run format:check
+      
+      - name: Linting
+        run: npm run lint
       
